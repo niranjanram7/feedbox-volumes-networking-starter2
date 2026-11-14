@@ -1,0 +1,5 @@
+services:
+  api:
+    volumes:
+      - ./server.js:/app/server.js
+    command: ["./node_modules/.bin/nodemon", "server.js"]
